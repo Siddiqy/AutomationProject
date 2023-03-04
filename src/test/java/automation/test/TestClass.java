@@ -38,8 +38,6 @@ public class TestClass extends BaseClass {
 			+ "Rs. 500"
 			+ "1"
 			+ "Rs. 500";
-	
-	String orderConfirmMsg = "Your order has been placed successfully!";
 ;	
 	@Test(priority = 1, description="All test will be run under one test case")
 	public void automationTesting() {

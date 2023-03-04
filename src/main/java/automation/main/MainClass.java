@@ -10,10 +10,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainClass {
+	
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	String emailaddress = "testemail04@yahoo.com";	//Change this email before running test
+	String emailAddress = "testemail100@gmail.com";
 	
 	By product = By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/h2");
 	By addProdBtn = By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a");
@@ -66,6 +67,7 @@ public class MainClass {
 	By cardExpYearFld = By.name("expiry_year");
 	By confmOrderBtn = By.id("submit");
 	By orderConfirmMsg = By.xpath("//*[@id=\"success_message\"]/div");
+	By deleteAccount = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
 	
 	public MainClass(WebDriver driver) {
 		this.driver = driver;
@@ -101,7 +103,7 @@ public class MainClass {
 		wait.until(ExpectedConditions.urlToBe("https://automationexercise.com/login"));
 		driver.findElement(nameFld).sendKeys("Test User");
 
-		driver.findElement(emailFld).sendKeys(emailaddress);
+		driver.findElement(emailFld).sendKeys(emailAddress);
 		driver.findElement(submitBtn).submit();
 		
 		driver.findElement(userTitle).click();
@@ -180,12 +182,20 @@ public class MainClass {
 		driver.findElement(cardExpYearFld).sendKeys("2026");
 		driver.findElement(confmOrderBtn).submit();
 		driver.navigate().back();
+		
+		checkConfirmMsg();	//Your order has been placed successfully!
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(orderConfirmMsg));
-		orderPlaced();
 		driver.findElement(confmOrderBtn).submit();
+		
+		new Actions(driver)
+				.moveToElement(driver.findElement(deleteAccount))
+				.pause(Duration.ofSeconds(1))
+				.click()
+				.perform();
 	}
 	
-	public boolean orderPlaced() {
+	public boolean checkConfirmMsg() {
 		return driver.findElement(orderConfirmMsg).isDisplayed();
 	}
 }

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-04T08:34:34 BDT" name="Default suite" finished-at="2023-03-04T08:35:30 BDT" duration-ms="56019">
+  <suite started-at="2023-03-04T10:11:39 BDT" name="Default suite" finished-at="2023-03-04T10:12:43 BDT" duration-ms="63559">
     <groups>
     </groups>
-    <test started-at="2023-03-04T08:34:34 BDT" name="Default test" finished-at="2023-03-04T08:35:30 BDT" duration-ms="56019">
+    <test started-at="2023-03-04T10:11:39 BDT" name="Default test" finished-at="2023-03-04T10:12:43 BDT" duration-ms="63559">
       <class name="automation.test.TestClass">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T08:34:34 BDT" name="Setup" finished-at="2023-03-04T08:34:44 BDT" duration-ms="9410" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T10:11:39 BDT" name="Setup" finished-at="2023-03-04T10:11:49 BDT" duration-ms="9615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="automationTesting()[pri:1, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T08:34:44 BDT" name="automationTesting" description="All test will be run under one test case" finished-at="2023-03-04T08:35:30 BDT" duration-ms="46577" status="PASS">
+        <test-method signature="automationTesting()[pri:1, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T10:11:49 BDT" name="automationTesting" description="All test will be run under one test case" finished-at="2023-03-04T10:12:43 BDT" duration-ms="53717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- automationTesting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T08:35:30 BDT" name="tearDown" finished-at="2023-03-04T08:35:30 BDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T10:12:43 BDT" name="tearDown" finished-at="2023-03-04T10:12:43 BDT" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
