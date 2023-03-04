@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-04T08:34:34 BDT" name="Default suite" finished-at="2023-03-04T08:35:30 BDT" duration-ms="56019">
+    <groups>
+    </groups>
+    <test started-at="2023-03-04T08:34:34 BDT" name="Default test" finished-at="2023-03-04T08:35:30 BDT" duration-ms="56019">
+      <class name="automation.test.TestClass">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T08:34:34 BDT" name="Setup" finished-at="2023-03-04T08:34:44 BDT" duration-ms="9410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="automationTesting()[pri:1, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T08:34:44 BDT" name="automationTesting" description="All test will be run under one test case" finished-at="2023-03-04T08:35:30 BDT" duration-ms="46577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automationTesting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.test.TestClass@550dbc7a]" started-at="2023-03-04T08:35:30 BDT" name="tearDown" finished-at="2023-03-04T08:35:30 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.test.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
